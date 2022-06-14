@@ -26,8 +26,6 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  array.push(array[array.length -1] + 1);
-  return array;
 }
 
 
@@ -35,6 +33,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array;
 }
 
 
@@ -43,6 +43,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -52,6 +54,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  let nuevoString = palabras[0];
+  for (let posicion = 1; posicion < palabras.length; posicion++){
+    return nuevoString + ' ' + palabras[posicion];
+  }
 }
 
 
