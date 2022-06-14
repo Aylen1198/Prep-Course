@@ -26,6 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  let nuevoArray = [];
+  for (let i = 0; i < array.length; i++){
+    nuevoArray[i] = array[i] + 1;
+  }
+  return nuevoArray;
 }
 
 
@@ -56,8 +61,9 @@ function dePalabrasAFrase(palabras) {
   // Tu código:
   let nuevoString = palabras[0];
   for (let posicion = 1; posicion < palabras.length; posicion++){
-    return nuevoString + ' ' + palabras[posicion];
+    nuevoString = nuevoString + ' ' + palabras[posicion];
   }
+  return nuevoString;
 }
 
 
